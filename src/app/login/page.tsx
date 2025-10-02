@@ -55,7 +55,7 @@ export default function LoginPage() {
                         <Label htmlFor="remember-me" className="text-sm font-normal">Remember me</Label>
                     </div>
                     <Link
-                        href="#"
+                        href="/forgot-password"
                         className="text-sm text-primary hover:underline"
                     >
                         Forgot password?
@@ -67,7 +67,7 @@ export default function LoginPage() {
               </div>
               <div className="mt-4 text-center text-sm">
                 Don&apos;t have an account?{' '}
-                <Link href="#" className="underline">
+                <Link href="/signup" className="underline">
                   Sign up
                 </Link>
               </div>
