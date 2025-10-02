@@ -9,7 +9,7 @@ import { Label } from '@/components/ui/label';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function ForgotPasswordPage() {
-  const-loginImage = PlaceHolderImages.find(p => p.id === 'login-illustration');
+  const loginImage = PlaceHolderImages.find(p => p.id === 'login-illustration');
 
   return (
     <div className="w-full h-screen lg:grid lg:grid-cols-2">
