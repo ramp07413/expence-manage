@@ -7,6 +7,7 @@ import {
   LineChart,
   Settings,
   Plus,
+  LogOut,
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -65,6 +66,18 @@ export function Sidebar() {
               </Button>
             </TooltipTrigger>
             <TooltipContent side="right">Add Expense</TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+               <Link
+                  href="/login"
+                  className='flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
+                >
+                  <LogOut className="h-5 w-5" />
+                  <span className="sr-only">Logout</span>
+                </Link>
+            </TooltipTrigger>
+            <TooltipContent side="right">Logout</TooltipContent>
           </Tooltip>
         </TooltipProvider>
       </nav>
