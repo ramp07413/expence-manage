@@ -1,7 +1,7 @@
 'use client';
 
 import {
-  Home,
+  LayoutDashboard,
   CreditCard,
   PieChart,
   LineChart,
@@ -21,7 +21,7 @@ import {
 } from '@/components/ui/tooltip';
 
 const navItems = [
-  { href: '/', icon: Home, label: 'Home' },
+  { href: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
   { href: '/expenses', icon: CreditCard, label: 'Expenses' },
   { href: '/budgets', icon: PieChart, label: 'Budgets' },
   { href: '/reports', icon: LineChart, label: 'Reports' },
@@ -70,7 +70,7 @@ export function Sidebar() {
           <Tooltip>
             <TooltipTrigger asChild>
                <Link
-                  href="/login"
+                  href="/"
                   className='flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
                 >
                   <LogOut className="h-5 w-5" />
