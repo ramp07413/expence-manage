@@ -13,9 +13,14 @@ export function Header() {
           <Wallet className="h-6 w-6 text-primary" />
           <span className="font-headline">Pastel Ledger</span>
         </Link>
-        <Button asChild>
-          <Link href="#">Get Started</Link>
-        </Button>
+        <div className="flex items-center gap-4">
+          <Button variant="ghost" asChild>
+            <Link href="/login">Login</Link>
+          </Button>
+          <Button asChild>
+            <Link href="#">Get Started</Link>
+          </Button>
+        </div>
       </div>
     </header>
   );
